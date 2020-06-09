@@ -44,7 +44,7 @@ router.post("/", (req, res) => {
 		})
 	}
 
-	posts.add(req.body)
+	posts.insert(req.body)
 		.then((post) => {
 			res.status(201).json(post)
 		})
